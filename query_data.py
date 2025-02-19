@@ -26,7 +26,7 @@ def main():
     query_text = args.query_text
 
     # Prepare the DB.
-    embedding_function = OpenAIEmbeddings()
+    embedding_function = OpenAIEmbeddings(model="text-embedding-ada-002")
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
 
     # Search the DB.

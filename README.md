@@ -20,6 +20,11 @@
 pip install -r requirements.txt
 ```
 
+2.1 
+```python
+pip install "openai>=1.2.0" "langchain>=0.1.0" "pydantic>=1.10.0,<2.0.0
+```
+
 3. Install markdown depenendies with: 
 
 ```python
